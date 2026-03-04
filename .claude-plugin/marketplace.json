@@ -1,0 +1,41 @@
+{
+  "name": "science-plugins",
+  "owner": {
+    "name": "James Traina"
+  },
+  "metadata": {
+    "description": "Plugins for mathematical computing, scientific research, and developer productivity"
+  },
+  "plugins": [
+    {
+      "name": "wolfram-hart",
+      "description": "Gives Claude a real math engine. Translates questions to Wolfram Language, runs via wolframscript, and returns exact answers — symbolic algebra, calculus, plotting, statistics, and more.",
+      "source": {
+        "source": "github",
+        "repo": "James-Traina/wolfram-hart"
+      },
+      "category": "science",
+      "tags": ["math", "wolfram", "symbolic-computation", "science"]
+    },
+    {
+      "name": "compound-science",
+      "description": "Research workflow toolkit for structural econometrics, causal inference, game theory, and quantitative social science. Each unit of research work makes subsequent work easier.",
+      "source": {
+        "source": "github",
+        "repo": "James-Traina/compound-science"
+      },
+      "category": "science",
+      "tags": ["econometrics", "causal-inference", "game-theory", "research"]
+    },
+    {
+      "name": "claude-codex",
+      "description": "Intelligent task router that automatically delegates mechanical coding tasks to OpenAI Codex, reducing Anthropic token usage by 60-85% on simple tasks.",
+      "source": {
+        "source": "github",
+        "repo": "James-Traina/claude-codex"
+      },
+      "category": "productivity",
+      "tags": ["codex", "routing", "cost-optimization", "productivity"]
+    }
+  ]
+}
