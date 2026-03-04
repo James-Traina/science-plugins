@@ -4,7 +4,8 @@
     "name": "James Traina"
   },
   "metadata": {
-    "description": "Plugins for mathematical computing, scientific research, and developer productivity"
+    "description": "Plugins for mathematical computing, scientific research, and developer productivity",
+    "version": "1.0.0"
   },
   "plugins": [
     {
@@ -14,8 +15,15 @@
         "source": "github",
         "repo": "James-Traina/wolfram-hart"
       },
+      "author": {
+        "name": "James Traina"
+      },
+      "homepage": "https://github.com/James-Traina/wolfram-hart",
+      "repository": "https://github.com/James-Traina/wolfram-hart",
+      "license": "MIT",
       "category": "science",
-      "tags": ["math", "wolfram", "symbolic-computation", "science"]
+      "tags": ["math", "wolfram", "symbolic-computation", "science"],
+      "keywords": ["wolfram", "mathematica", "math", "science", "symbolic", "calculus", "plotting", "statistics"]
     },
     {
       "name": "compound-science",
