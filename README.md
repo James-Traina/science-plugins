@@ -62,6 +62,22 @@ A `UserPromptSubmit` hook classifies every prompt with weighted pattern matching
 
 ---
 
+### [ralpha-team](https://github.com/James-Traina/ralpha-team)
+
+Runs your prompt in a loop until the job is actually done. Give it an objective, a verification command, and optionally a team size. It feeds the prompt back, iteration after iteration, until the verification command exits 0.
+
+Solo mode runs a single session with access to previous work in files and git history. Team mode spawns parallel agents — architect, implementer, tester, reviewer, debugger — coordinated by a lead. Both modes use a dual gate: Claude must output a promise phrase *and* the verification command must pass. If Claude claims done but the command fails, the loop continues with the failure output fed back in.
+
+**Components:** 5 agents · 5 commands (`/team`, `/solo`, `/status`, `/cancel`, `/qa`) · 5 hooks
+
+**Prerequisites:** Requires `jq`. Team mode requires `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1` in your Claude Code settings.
+
+```
+/plugin install ralpha-team@science-plugins
+```
+
+---
+
 ## Updating
 
 ```bash
@@ -72,6 +88,7 @@ A `UserPromptSubmit` hook classifies every prompt with weighted pattern matching
 /plugin update wolfram-hart
 /plugin update compound-science
 /plugin update claude-codex
+/plugin update ralpha-team
 ```
 
 ## License
